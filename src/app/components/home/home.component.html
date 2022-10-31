@@ -1,0 +1,17 @@
+<body class="body-control">
+    <div class="content" fxflex="20%">
+      <div fxLayout="row wrap">
+        <div *ngFor="let product of products" class="exterior">
+      <div class="card">
+        <img src={{product.cellPhoneURL}} class="card-img-top" alt="Fissure in Sandstone"/>
+        <div class="card-body">
+          <div><h5>{{product.cellPhoneName}}<span class="brand">{{product.cellPhoneBrand}}</span></h5></div>
+          <div><h6>₹{{product.cellPhonePrice}}<span class="brand">{{product.cellPhoneCategory}}</span></h6></div>
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <a href="#!" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </body>

@@ -1,0 +1,33 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+.body{
+    padding-top: 20px;
+}
+
+.sign{
+    margin-right: 100px;
+    float: right;
+}
+
+#Or{
+    margin-right: 50%;
+}
+
+/* .remember{
+    /* margin-right: 150px; */
+    /* padding-bottom: 10px;
+} */ 

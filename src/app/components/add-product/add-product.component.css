@@ -1,0 +1,34 @@
+.panel{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 4%;
+}
+
+input{
+    margin-left:10px;
+    width: 350px;
+}
+
+label{
+    margin-top: 5px;
+}
+
+div{
+    margin: 10px;
+}
+
+.price{
+    margin-left: 40px;
+}
+
+.url{
+    margin-left: 52px;
+}
+
+.brand{
+    margin-left: 30px;
+}
+
+.name{
+    margin-left: 28px;
+}

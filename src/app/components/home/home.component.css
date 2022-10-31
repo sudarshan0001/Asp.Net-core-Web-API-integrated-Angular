@@ -1,0 +1,18 @@
+.card{
+    width: 250px;
+    /* padding: 10px; */
+  }
+  
+  .exterior{
+    padding: 10px;
+  }
+  
+  .body-control{
+    margin-left: 8%;
+    margin-right: 6%;
+  }
+  
+  .brand{
+    color: darkgrey;
+    float: right;
+  }

@@ -1,0 +1,40 @@
+<form [formGroup]="createForm">
+    <div class="panel">
+        <div class="form-group" fxLayout="row wrap">
+            <div><label for="exampleFormControlInput1">Product Name</label></div>
+            <div class="div name"><input formControlName="cellPhoneName" type="text" class="form-control" id="exampleFormControlInput1" ></div>
+        </div>
+        <small *ngIf="createForm.controls['cellPhoneName'].dirty && createForm.hasError('required','cellPhoneName')" class="text-danger">*product name is required</small>
+         
+        <div class="form-group" fxLayout="row wrap">
+            <div><label for="exampleFormControlInput1">Product Brand</label></div>
+            <div class="div brand"><input formControlName="cellPhoneBrand" type="text" class="form-control" id="exampleFormControlInput1" ></div>
+        </div>
+        <small *ngIf="createForm.controls['cellPhoneBrand'].dirty && createForm.hasError('required','cellPhoneBrand')" class="text-danger">*product brand is required</small>
+
+        <div class="form-group" fxLayout="row wrap">
+            <div><label for="exampleFormControlInput1">Product Url</label></div>
+            <div class="div url"><input formControlName="cellPhoneURL" type="text" class="form-control" id="exampleFormControlInput1" ></div>
+          </div>
+          <small *ngIf="createForm.controls['cellPhoneURL'].dirty && createForm.hasError('required','cellPhoneURL')" class="text-danger">*product url is required</small>
+
+          <div class="form-group" fxLayout="row wrap">
+            <div><label for="exampleFormControlInput1">Product Price</label></div>
+            <div class="div price"><input formControlName="cellPhonePrice" type="number" class="form-control" id="exampleFormControlInput1" ></div>
+          </div>
+          <small *ngIf="createForm.controls['cellPhonePrice'].dirty && createForm.hasError('required','cellPhonePrice')" class="text-danger">*product price is required</small>
+
+
+
+          <div class="form-group" fxLayout="row wrap">
+            <div><label for="exampleFormControlInput1">Product Category</label></div>
+            <div class="div"><input formControlName="cellPhoneCategory" type="text" class="form-control" id="exampleFormControlInput1" ></div>
+          </div>
+          <small *ngIf="createForm.controls['cellPhoneCategory'].dirty && createForm.hasError('required','cellPhoneCategory')" class="text-danger">*product category is required</small>
+
+    
+          <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4" id="register-button">
+            <button (click)="onCreate()" [disabled]="createForm.invalid" type="button" class="btn btn-primary btn-lg">Create</button>
+          </div>
+    </div>
+</form>

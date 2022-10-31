@@ -1,0 +1,21 @@
+.d-flex {
+    float: right;
+    margin-left: 0px;
+}
+
+.d-flex.flex-row.align-items-center.mb-4{
+    margin-bottom: 0px;
+    float: left;
+}
+
+.whole-Form{
+    margin-left: 0px;
+}
+
+#register-form{
+    margin: 5px;
+}
+
+#register-button{
+    float: left;
+}

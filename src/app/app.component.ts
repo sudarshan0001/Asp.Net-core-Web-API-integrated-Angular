@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { producthome } from './models/product-home';
+import { ProductHomeService } from './services/product-home.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ProductManagementApp';
+ 
+
+  constructor(){}
+
+  ngOnInit(): void{
+    
+  } 
 }
